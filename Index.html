@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the site responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes-App</title>
+
+  <!--External FontAwesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="./Style/style.css" />
+</head>
+<body>
+  <div class="mobile-container">
+
+    <!-- Header section with search bar -->
+    <header>
+
+      <!-- Input for typing a meal name -->
+      <input type="text" id="search-term" placeholder="Enter your Favorite Meal"/>
+
+      <!-- Search button with FontAwesome search icon -->
+      <button id="search"><i class="fas fa-search"></i></button>
+    </header>
+
+    <!-- Favorite meals list -->
+    <div class="fav-container">
+      <h3>Favorite Meals</h3>
+
+      <!-- This unordered list will be filled dynamically with favorite meals -->
+      <ul class="fav-meals" id="fav-meals"></ul>
+    </div>
+
+    <!-- Meals section (populated dynamically with recipes) -->
+    <div class="meals" id="meals"></div>
+
+  </div>
+
+  <!-- Popup modal for meal details -->
+  <div class="popup-container hidden" id="meal-popup">
+    <div class="popup">
+
+      <!-- Close button with FontAwesome "X" icon -->
+      <button id="close-popup" class="close-popup"><i class="fas fa-times"></i></button>
+      
+      <!-- Container for detailed meal information -->
+      <div class="meal-info" id="meal-info"></div>
+    </div>
+  </div>
+  
+</body>
+</html>
