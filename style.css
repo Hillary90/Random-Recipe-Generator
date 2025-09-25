@@ -21,10 +21,15 @@ img {
 /* Styling main mobile app container */
 .mobile-container {
   background-color: #fff;
+  background-image: url(./images/food-recepie.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat;
   box-shadow: 0 0 10px 2px #3333331a; 
   border-radius: 3px; 
   overflow: hidden;
-  width: 400px; 
+  width: 400px;
+  height: 400px;
+
 }
 
 /* Stylin header section */
@@ -55,8 +60,14 @@ header button {
 
 /* Styling favorites section background */
 .fav-container {
-  background-color: rgb(201, 202, 142);
+  -webkit-background-clip: text;
+  background: linear-gradient(to right, #52ffd4, #3e51ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:transparent;
   padding: 0.25rem 1rem;
+  font-size: 40px;
   text-align: center;
 }
 
